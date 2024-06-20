@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #BEEF89;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-family: Algerian;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .gallery-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            color: black;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 80%;
+        }
+        .gallery-section img, .gallery-section video {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .video-section {
+            background-color: #f1f1f1;
+            color: black;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            text-align: center;
+        }
+        footer {
+            background-color: #03DBFD;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            .gallery-section, .video-section {
+                width: 90%;
+            }
+            .gallery-section img, .gallery-section video {
+                width: 100%;
+                height: auto;
+            }
+        }
+        nav {
+            margin: 0 auto;
+            width: 100%;
+            background: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav li {
+            display: inline;
+            position: relative;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 15px 20px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #03DBFD;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #03DBFD;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">About Me</a>
+            <div class="dropdown-content">
+                <a href="profile.html">Profile</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="interests.html">Interests</a>
+            </div>
+        </li>
+        <li><a href="family.html">Family Members</a></li>
+        <li><a href="friends.html">Friends</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="achievement.html">Achievements</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+</nav>
+
+<h1>My Gallery</h1>
+
+<div class="gallery-section">
+        <img src="image/gmemory.jpg" alt="Profile Image">
+        <img src="image/full neighbour.jpg" alt="Profile Image">
+        <img src="image/neighbour.jpg" alt="Profile Image">
+        <img src="image/newfriend.jpg" alt="Profile Image">
+        <img src="image/oldfriend.jpg" alt="Profile Image">
+</div>
+
+<div class="video-section">
+    <h2>My Videos</h2>
+    <video controls>
+        <source src="video/gstyle.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<footer>
+    <p>&copy; 2024 My Gallery</p>
+</footer>
+
+</body>
+</html>

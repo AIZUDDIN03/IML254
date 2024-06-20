@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Achievements</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #BEEF89;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            width: 100%;
+            background-color: #4CAF50;
+            text-align: center;
+            padding: 10px 0;
+            border-bottom: 5px solid #333;
+        }
+        header img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+        }
+        h1 {
+            font-family: 'Algerian', serif;
+            color: white;
+            margin: 20px 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        .achievement-section {
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            margin: 20px 0;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .achievement-section h2 {
+            margin: 10px 0;
+            font-size: 24px;
+            color: #D30D58;
+            text-transform: uppercase;
+        }
+        .achievement-section p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+        .achievement-section table {
+            width: 100%;
+            margin-top: 15px;
+            border-collapse: collapse;
+        }
+        .achievement-section th, .achievement-section td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: center;
+            font-size: 16px;
+        }
+        .achievement-section th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        footer {
+            width: 100%;
+            background-color: #03DBFD;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            margin-top: auto;
+        }
+        /* Navigation Menu Styles */
+        nav {
+            margin: 0 auto;
+            width: 100%;
+            background: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav li {
+            display: inline;
+            position: relative;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 15px 20px;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #03DBFD;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #03DBFD;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        @media (max-width: 600px) {
+            .achievement-section {
+                width: 90%;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .achievement-section h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+        <ul>
+            <li><a href="index.html" class="home-button"><i class="fas fa-home"></i></a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">About Me</a>
+                <div class="dropdown-content">
+                    <a href="profile.html" target="_blank">Profile</a>
+                    <a href="hobbies.html" target="_blank">Hobbies</a>
+                    <a href="interests.html" target="_blank">Interests</a>
+                </div>
+        </li>
+        <li><a href="family.html">Family Members</a></li>
+        <li><a href="friends.html">Friends</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="achievement.html">Achievements</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+</nav>
+
+<h1>My Achievements</h1>
+
+<div class="achievement-section">
+    <h2>UPSR Results</h2>
+    <p>Year: 2016</p>
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>Malay Language: Understanding</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>Malay Language: Writing</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>English: Comprehension</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>English: Writing</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>Mathematics</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>B</td>
+        </tr>
+    </table>
+</div>
+
+<div class="achievement-section">
+    <h2>PT3 Results</h2>
+    <p>Year: 2019</p>
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>Malay Language</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Malay (Spoken)</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>History</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>Geography</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>Islamic Studies</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>Mathematics</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>Fundamentals of Computer Science</td>
+            <td>C</td>
+        </tr>
+    </table>
+</div>
+
+<div class="achievement-section">
+    <h2>SPM Results</h2>
+    <p>Year: 2019</p>
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>Malay Language</td>
+            <td>A-</td>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td>B+</td>
+        </tr>
+        <tr>
+            <td>Islamic Studies</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>History</td>
+            <td>C+</td>
+        </tr>
+        <tr>
+            <td>Mathematics</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Visual Arts Education</td>
+            <td>A-</td>
+        </tr>
+        <tr>
+            <td>Economy</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>Tasawwur Islam</td>
+            <td>A</td>
+        </tr>
+    </table>
+</div>
+
+<div class="achievement-section">
+    <h2>Majlis Sukan Sekolah Daerah Besut (Archery)</h2>
+    <p>Sekolah Menengah Kebangsaan Jabi</p>
+    <p>Year: 2018</p>
+    <p>Description: First runner up of the Olympic round</p>
+    <p>Description: Third place for the Overall round</p>
+    <p>Place: Sekolah Kebangsaan Pelagat, Jerteh, Besut, Terengganu</p>
+</div>
+
+<div class="achievement-section">
+    <h2>Majlis Sukan Sekolah Daerah Besut (Archery)</h2>
+    <p>Sekolah Menengah Kebangsaan Jabi</p>
+    <p>Year: 2019</p>
+    <p>Description: Fourth place of the second round</p>
+    <p>Place: Lapang Sasar Sekolah Kebangsaan Seberang Jerteh, Besut, Terengganu</p>
+</div>
+
+<div class="achievement-section">
+    <h2>Best Resource Center Supervisor (Lower Secondary)</h2>
+    <p>Year: 2019</p>
+</div>
+
+<div class="achievement-section">
+    <h2>Majlis Sukan Sekolah Daerah Besut (Archery)</h2>
+    <p>Sekolah Menengah Kebangsaan Jabi</p>
+    <p>Year: 2020</p>
+    <p>Description: Fourth place of the First round</p>
+    <p>Description: Fourth place of the Second round</p>
+    <p>Place: Lapang Sasar Sekolah Kebangsaan Seberang Jerteh, Besut, Terengganu</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 My Achievements</p>
+</footer>
+
+</body>
+</html>
